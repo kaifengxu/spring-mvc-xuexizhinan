@@ -1,5 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +28,7 @@
         </p>
         <p>
             <label for="image">Product Image: </label>
-            <input type="file" name="images[0]"/>
+            <input type="file" name="images" multiple="multiple"/>
         </p>
         <p id="buttons">
             <input id="reset" type="reset" tabindex="4">
